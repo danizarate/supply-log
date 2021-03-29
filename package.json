@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:": "jest",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -72,5 +73,13 @@
     "transform": {
       "^.+\\.vue$": "vue-jest"
     }
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

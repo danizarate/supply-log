@@ -77,6 +77,8 @@
                 </div>
               </div>
 
+              
+
               <div><h2>¿Quieres comprar sin tener que hacerte cargo de todos los
                 detalles? Estas en el lugar adecuado.</h2></div>
 
@@ -151,19 +153,22 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row mt-5">
           <h1>¿Qué nos hace diferentes al resto?</h1>
       </div>
-      <div class="row">
+      <div class="row mt-2">
           <h3>Nos hace diferente nuestra amplia experiencia.
               Somos parte de AirSea-Log Chile, quien lleva muchos años en el
               mercado del transporte internacional, lo que nos hace mucho más
               eficaces y
               rápidos, haciendo de la logística nuestro gran valor agregado.</h3>
       </div>
-      <div class="row">
+      <div class="row mt-1">
           <h3>Además, contamos con una gran cartera de
           proveedores, lo que nos permitirá brindarte mejores precios.</h3>
+      </div>
+      <div class="row mt-5">
+        <h2>Nuestros Proveedores</h2>
       </div>
     </div>
 
@@ -223,21 +228,110 @@
                   </div>
                 </div>
               </div>
+              
+      </div>
+
+  
+
+
+
+    </div>
+
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="../assets/img/proveedores/deere.jpg" alt="Card image cap">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="../assets/img/proveedores/holland.jpg" alt="Card image cap">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="../assets/img/proveedores/case.jpg" alt="Card image cap">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="../assets/img/proveedores/atlas.jpg" alt="Card image cap">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              
       </div>
     </div>
 
+    <hr style="color: #0056b2;" />
+
     <div class="container">
-      <dirv class="row">
+      <div class="row">
         <div class="col">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Fluid jumbotron</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <h1 class="display-4">Visitanos en nuestras redes sociales</h1>
+                  <img src="../assets/img/rrss/instagram.png" alt="..." class="img-thumbnail">
+                  <img src="../assets/img/rrss/facebook.png" alt="..." class="img-thumbnail">
                 </div>
               </div>
         </div>
-      </dirv>
+      </div>
     </div>
+
+    <hr style="color: #0056b2;" />
+
+    <div class="container mx-2">
+        <div class="row">
+            <div class="col-sm-3" style="border:2px solid blue">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.073905524849!2d-70.61285898426549!3d-33.42131750340486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf663aecd2ef%3A0x91d5603472c75083!2sNueva%20de%20Lyon%2072%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617036302793!5m2!1ses!2scl"
+                 width="300" height="300" style="border:1px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-4 mx-2" style="border:2px solid blue">
+              <h3><strong>Supply-Log</strong></h3>
+              <div class="row" style="border:2px solid green">
+                  <h5>askljlakdjkl</h5>
+              </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
 
   </div>
 </template>
@@ -282,5 +376,9 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+.mapa{
+  width: 200px;
+  height: 200px;
 }
 </style>
