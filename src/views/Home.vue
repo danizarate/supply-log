@@ -317,13 +317,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
-            <div class="jumbotron jumbotron-fluid">
+            <!-- <div class="jumbotron jumbotron-fluid"> -->
                 <div class="container">
                   <h3 class="display-5">Visitanos en nuestras redes sociales</h3>
                   <img src="../assets/img/rrss/insta.gif" alt="..." class="imgrrss">
                   <img src="../assets/img/rrss/facebook.gif" alt="..." class="imgrrss">
                 </div>
-              </div>
+             <!--  </div> -->
         </div>
       </div>
     </div>
