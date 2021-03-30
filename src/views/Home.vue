@@ -7,10 +7,14 @@
     </div>
     <div v-else-if="!loading">
 
-    
+     
       <Menu />
-
-        <!-- Imagen-1 Fondo de pantalla -->
+      <Carrusel />
+      <Whatsapp />
+      
+      <!-- Imagen-1 Fondo de pantalla -->
+      <!-- 
+        
         <div class="card bg-dark text-primary">
             <img class="card-img" src="../assets/img/imagen1.jpg" alt="Card image">
             <div class="card-img-overlay">
@@ -20,9 +24,9 @@
             </div>
         </div>
 
-
+ -->
         <HelloWorld msg="Lo necesitas; lo tienes!!!" class="mt-5" />
-  
+        
      
 
       <h2></h2>
@@ -127,8 +131,8 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L2-1.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Importación Repuestos para tu Industria.</h5>
+                    <p class="card-text">A pedido de Estados unidos, donde contamos con nuestro propio warehouse.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                   
@@ -138,8 +142,8 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L2-2.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Las mejores marcas.</h5>
+                    <p class="card-text"><br><br>Precios competitivos para tu negocio.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                   
@@ -150,8 +154,8 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L2-3.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Todo tipo de productos para tu rubro.</h5>
+                    <p class="card-text">Importamos todo lo que necesites, ya seas cliente natural o empresa.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                   
@@ -370,6 +374,8 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import Whatsapp from '@/components/Whatsapp.vue'
+import Carrusel from '@/components/Carrusel.vue'
 import Loader from '@/components/Loader.vue';
 import Menu from "@/components/Menu.vue"
 export default {
@@ -385,6 +391,8 @@ export default {
     components:{
         HelloWorld,
         Menu,
+        Whatsapp,
+        Carrusel,
         Loader
     },
     methods:{
@@ -397,7 +405,7 @@ export default {
               this.loading = false;
                 
             }, 1000);
-            console.log(this.loading)
+            
         },
        
     },
