@@ -1,6 +1,13 @@
 <template>
   
   <div class="home">
+      <div v-if="loading">
+        
+        <Loader />
+    </div>
+    <div v-else-if="!loading">
+
+    
       <Menu />
 
         <!-- Imagen-1 Fondo de pantalla -->
@@ -14,55 +21,50 @@
         </div>
 
 
-
+        <HelloWorld msg="Lo necesitas; lo tienes!!!" class="mt-5" />
   
-      <HelloWorld msg="Lo necesitas; lo tienes!!!" class="mt-5" />
+     
 
       <h2></h2>
 
         <div class="container mt-5">
           <div class="row">
 
-              <div class="col-sm-3">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-1.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Compramos por ti, desde donde tu   quieras.</h5>
+                    <p class="card-text">Adquiere lo que quieras, de páginas web como Amazon, eBay, etc.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-2.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Repuestos industriales mucho más, a pedido.</h5>
+                    <p class="card-text">Importación de Repuestos Importación de Repuestos con número de parte.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
 
-              <div class="col-sm-3">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-3.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Todo tipo de productos, para ti o tu empresa.</h5>
+                    <p class="card-text">Buscamos los mejores precios, con una rápida logística.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
+              <!-- 
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
@@ -77,7 +79,7 @@
                 </div>
               </div>
 
-              
+               -->
 
               <div class="mt-5"><h2>¿Quieres comprar sin tener que hacerte cargo de todos los
                 detalles? Estas en el lugar adecuado.</h2></div>
@@ -129,9 +131,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
               <div class="col-sm-4">
@@ -142,9 +142,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
 
@@ -156,9 +154,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
       </div>
@@ -195,9 +191,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                 
                 </div>
               </div>
               <div class="col-sm-3">
@@ -208,9 +202,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
 
@@ -222,9 +214,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
               <div class="col-sm-3">
@@ -235,9 +225,7 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  
                 </div>
               </div>
               
@@ -309,6 +297,10 @@
       </div>
     </div>
 
+    <!-- *************************************************************************************************************** -->
+    <!-- ***************************************************    RRSS   ************************************************* -->
+   
+
     <hr style="color: #0056b2;" />
 
     <div class="container">
@@ -325,7 +317,11 @@
       </div>
     </div>
 
-    <hr style="color: #0056b2;" />
+    <hr style="color: #0056b2;" /> <!-- Crea divisor -->
+
+    <!-- *************************************************************************************************************** -->
+    <!-- ***********************************************    Footer de la pagina   ************************************** -->
+
 
     <div class="container mx-2">
         <div class="row">
@@ -335,7 +331,7 @@
             </div>
             <div class="col-sm-6 mx-2">
               <h3><strong>Supply-Log</strong></h3>
-              <div class="row">
+              <div class="row mt-3">
                   <h5 class="izq">Nueva de Lyon 72 - Oficina 1501</h5>
                   <h5 class="izq">Providencia - Region Metropolitana - Chile</h5>
               </div>
@@ -360,23 +356,49 @@
         
     </div>
 
-
+</div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HelloWorld from '@/components/HelloWorld.vue'
 import Loader from '@/components/Loader.vue';
 import Menu from "@/components/Menu.vue"
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
-    Loader,
-    Menu
-  },
-};
+ data(){
+        return{
+            loading: false
+        }
+    },
+    created(){
+        //validamos si existe parametro o no
+       
+    },
+    components:{
+        HelloWorld,
+        Menu,
+        Loader
+    },
+    methods:{
+     
+        async carga(){
+            //ponemos un timeot para que se muestren los spinner
+            this.loading = true;
+            setTimeout(() => {
+                //usamos el servicio para traer los datos
+              this.loading = false;
+                
+            }, 1000);
+            console.log(this.loading)
+        },
+       
+    },
+    mounted(){
+        this.carga()
+    }
+}
+
 </script>
 
 <style>
