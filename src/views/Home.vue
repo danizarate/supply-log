@@ -175,6 +175,12 @@
           <h3>Además, contamos con una gran cartera de
           proveedores, lo que nos permitirá brindarte mejores precios.</h3>
       </div>
+
+
+    <!-- *************************************************************************************************************** -->
+    <!-- ***************************************************    RRSS   ************************************************* -->
+   
+
       <div class="row mt-5">
         <h2>Nuestros Proveedores</h2>
       </div>
@@ -187,9 +193,9 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/cummins.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <!-- <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
                  
                 </div>
@@ -198,10 +204,11 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/komatsu.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                   <!--  <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                    -->
+                  </div> 
                   
                 </div>
               </div>
@@ -210,9 +217,9 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/Fluke-1.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <!-- <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
                   
                 </div>
@@ -221,9 +228,9 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/cat.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <!-- <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
                   
                 </div>
@@ -244,26 +251,26 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/deere.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <!-- <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
-                  <div class="card-footer">
+                  <!-- <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/holland.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                   <!--  <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
-                  <div class="card-footer">
+                  <!-- <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -271,26 +278,26 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/case.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <!-- <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
-                  <div class="card-footer">
+                 <!--  <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top imgprov" src="../assets/img/proveedores/atlas.jpg" alt="Card image cap">
-                    <h5 class="card-title">Special title treatment</h5>
+                   <!--  <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
-                  <div class="card-footer">
+                  <!-- <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               
