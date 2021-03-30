@@ -4,10 +4,10 @@
       <Menu />
 
         <!-- Imagen-1 Fondo de pantalla -->
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="../assets/img/image1.jpg" alt="Card image">
+        <div class="card bg-dark text-primary">
+            <img class="card-img" src="../assets/img/imagen1.jpg" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Bienvenido a Supply-Log</h5>
+              <h5 class="card-title "><h1><strong>Bienvenido a Supply Log</strong></h1></h5>
               <p class="card-text">¡Tu mejor opción para tus compras en el extranjero, donde nosotros hacemos todo por ti!</p>
               <p class="card-text"></p>
             </div>
@@ -16,11 +16,11 @@
 
 
   
-      <HelloWorld msg="Bienvenido a Supply-Log" />
+      <HelloWorld msg="Lo necesitas; lo tienes!!!" class="mt-5" />
 
       <h2></h2>
 
-        <div class="container">
+        <div class="container mt-5">
           <div class="row">
 
               <div class="col-sm-3">
@@ -79,11 +79,12 @@
 
               
 
-              <div><h2>¿Quieres comprar sin tener que hacerte cargo de todos los
+              <div class="mt-5"><h2>¿Quieres comprar sin tener que hacerte cargo de todos los
                 detalles? Estas en el lugar adecuado.</h2></div>
 
               <!-- Imagen-1 Fondo de pantalla -->
-              <div class="card bg-dark text-white" style="padding: 0;">
+              <!-- 
+              <div class="card bg-dark text-white parallax_uno" style="padding: 0;">
                   <img class="card-img" src="../assets/img/image2.jpg" alt="Card image">
                   <div class="card-img-overlay mt-5">
                     <h5 class="card-title">Brindamos un servicio <strong>All Included</strong></h5>
@@ -95,17 +96,28 @@
                   </div>
               </div>
 
+               -->
 
+              <!-- PARALLAX-1 -->
 
-
-
-
-
+              <div class="container parallax_uno">
+                  <div class="row">
+                      <div class="col-sm-auto texto_uno">
+                          <p>Brindamos un servicio <strong>All Included</strong></p>
+                          <p>donde hacemos la compra por ti, del producto que desees, dándote
+                            un precio en pesos chilenos, donde se incluye además del pago de tu producto,
+                            toda la logística internacional y local, entregándote el producto en tus manos,
+                            sin que tengas que preocuparte por nada.</p>
+                            </div>
+                  </div>
+              </div>
 
 
 
             </div>
             
+    <!-- LANDING-1 -->
+
     </div>
     <div class="container mt-3">
       <div class="row">
@@ -178,7 +190,7 @@
         <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/cummins.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/cummins.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -191,7 +203,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/komatsu.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/komatsu.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -205,7 +217,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/Fluke-1.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/Fluke-1.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -218,7 +230,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/cat.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/cat.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -243,7 +255,7 @@
         <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/deere.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/deere.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -256,7 +268,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/holland.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/holland.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -270,7 +282,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/case.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/case.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -283,7 +295,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="../assets/img/proveedores/atlas.jpg" alt="Card image cap">
+                    <img class="card-img-top imgprov" src="../assets/img/proveedores/atlas.jpg" alt="Card image cap">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -304,9 +316,9 @@
         <div class="col">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Visitanos en nuestras redes sociales</h1>
-                  <img src="../assets/img/rrss/instagram.png" alt="..." class="img-thumbnail">
-                  <img src="../assets/img/rrss/facebook.png" alt="..." class="img-thumbnail">
+                  <h3 class="display-5">Visitanos en nuestras redes sociales</h3>
+                  <img src="../assets/img/rrss/insta.gif" alt="..." class="imgrrss">
+                  <img src="../assets/img/rrss/facebook.gif" alt="..." class="imgrrss">
                 </div>
               </div>
         </div>
@@ -317,15 +329,31 @@
 
     <div class="container mx-2">
         <div class="row">
-            <div class="col-sm-3" style="border:2px solid blue">
+            <div class="col-sm-4 mt-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.073905524849!2d-70.61285898426549!3d-33.42131750340486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf663aecd2ef%3A0x91d5603472c75083!2sNueva%20de%20Lyon%2072%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617036302793!5m2!1ses!2scl"
-                 width="300" height="300" style="border:1px;" allowfullscreen="" loading="lazy"></iframe>
+                 width="300" height="300" style="border:2px solid black;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="col-sm-4 mx-2" style="border:2px solid blue">
+            <div class="col-sm-6 mx-2">
               <h3><strong>Supply-Log</strong></h3>
-              <div class="row" style="border:2px solid green">
-                  <h5>askljlakdjkl</h5>
+              <div class="row">
+                  <h5 class="izq">Nueva de Lyon 72 - Oficina 1501</h5>
+                  <h5 class="izq">Providencia - Region Metropolitana - Chile</h5>
               </div>
+              <div style="text-align: left">
+                  <img src="../assets/img/dir/telefono.png" alt="fono" class="imgdir">+56 2 222 22 22
+              </div>
+              <div style="text-align: left">
+                  <img src="../assets/img/dir/whatsapp.png" alt="whatsapp" class="imgdir">+56 (9) XXX XX XX
+              </div>
+              <div style="text-align: left">
+                  <img src="../assets/img/dir/www.png" alt="web" class="imgdir">www.supply-log.com
+              </div>
+              <div style="text-align: left">
+                  <img src="../assets/img/dir/mail.png" alt="mail" class="imgdir">contacto@supply-log.com
+              </div>  
+                
+                
+              
             </div>
             
         </div>
@@ -339,17 +367,44 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import Loader from '@/components/Loader.vue';
 import Menu from "@/components/Menu.vue"
 export default {
   name: "Home",
   components: {
     HelloWorld,
+    Loader,
     Menu
   },
 };
 </script>
 
 <style>
+
+.parallax_uno{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/image2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; /* Se utilizara FlexBox para poder manipular los demas objetos como el texto*/
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: yellow;
+  /*position: fixed;*/
+}
+
+.texto_uno{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 18px;
+  width:fit-content;
+  text-align: center;
+  color: white;
+}
+
 .img1{
   width: 100%;
   height: 400px;
@@ -381,4 +436,24 @@ export default {
   width: 200px;
   height: 200px;
 }
+.izq{
+  text-align: left;
+}
+.imgdir{
+  width: 60px;
+  height: 60px;
+  margin-left: 0px;
+  padding-left: 0px;
+  
+}
+.imgrrss{
+  width: 100px;
+  height: 100px;
+}
+
+.imgprov{
+  width: 100px;
+  height: 100px;
+}
+
 </style>
