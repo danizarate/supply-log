@@ -1,6 +1,6 @@
 <template>
     <!-- alert("Modulo Whatsapp") -->
-    <a class="appWhatsapp" target="_Blanck" href="https://api.whatsapp.com/send?phone=56942696881&text=Hola!%20Quiero%20consultar%20por%20sus%20servicios!">
+    <a class="appWhatsapp" target="_Blanck" href="https://api.whatsapp.com/send?phone=56961574821&text=Hola!%20Quiero%20consultar%20por%20sus%20servicios!">
         <img src="../assets/img/rrss/whatsapp.gif" alt="WhatsApp">
         
     </a>

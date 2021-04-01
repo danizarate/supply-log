@@ -16,10 +16,10 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contactanos</a>
+                <a class="nav-link" href="/Contactanos">Contactanos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Cotizador</a>
@@ -36,5 +36,7 @@ export default {
 </script>
 
 <style>
-
+router-link{
+  text-decoration: none;
+}
 </style>

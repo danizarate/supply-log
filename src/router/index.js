@@ -1,11 +1,27 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Contactanos from "../views/Contactanos.vue"
+import Notfound from '../views/Notfound.vue'
 
 const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/Contactanos",
+    name: "Contactanos",
+    component: Contactanos,
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: Notfound
+  },
+  { 
+    path: "/:catchAll(.*)", 
+    redirect: '/404' 
   },
   {
     path: "/about",

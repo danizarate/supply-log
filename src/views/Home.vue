@@ -169,11 +169,9 @@
           <h1>¿Qué nos hace diferentes al resto?</h1>
       </div>
       <div class="row mt-2">
-          <h3>Nos hace diferente nuestra amplia experiencia.
-              Somos parte de AirSea-Log Chile, quien lleva muchos años en el
-              mercado del transporte internacional, lo que nos hace mucho más
-              eficaces y
-              rápidos, haciendo de la logística nuestro gran valor agregado.</h3>
+          <h3>Nos hace diferente nuestra amplia experiencia en el mercado de la importación y exportación,
+              haciendo de la logística nuestro gran valor agregado; esto, es lo que nos hace mucho más
+              rápidos y eficaces.</h3><br/>
       </div>
       <div class="row mt-1">
           <h3>Además, contamos con una gran cartera de
@@ -320,7 +318,10 @@
             <!-- <div class="jumbotron jumbotron-fluid"> -->
                 <div class="container">
                   <h3 class="display-5">Visitanos en nuestras redes sociales</h3>
-                  <img src="../assets/img/rrss/insta.gif" alt="..." class="imgrrss">
+                  <a class="imgrrss" target="_Blanck" href="https://www.instagram.com/supplylogchile/">
+                      <img src="../assets/img/rrss/insta.gif" alt="Instagram" class="imgrrss">
+                  </a>
+                  <!-- <img src="../assets/img/rrss/insta.gif" alt="..." class="imgrrss"><a href="https://www.instagram.com/supplylogchile/"></a> -->
                   <img src="../assets/img/rrss/facebook.gif" alt="..." class="imgrrss">
                 </div>
              <!--  </div> -->
@@ -346,17 +347,17 @@
                   <h5 class="izq">Nueva de Lyon 72 - Oficina 1501</h5>
                   <h5 class="izq">Providencia - Region Metropolitana - Chile</h5>
               </div>
-              <div style="text-align: left">
+              <!-- <div style="text-align: left">
                   <img src="../assets/img/dir/telefono.png" alt="fono" class="imgdir">+56 2 222 22 22
+              </div> -->
+              <div style="text-align: left">
+                  <img src="../assets/img/dir/whatsapp.png" alt="whatsapp" class="imgdir"><a href="tel:+56961574821">+56 9 6157 4821</a>
               </div>
               <div style="text-align: left">
-                  <img src="../assets/img/dir/whatsapp.png" alt="whatsapp" class="imgdir">+56 (9) XXX XX XX
+                  <img src="../assets/img/dir/www.png" alt="web" class="imgdir">www.supplylog.cl
               </div>
               <div style="text-align: left">
-                  <img src="../assets/img/dir/www.png" alt="web" class="imgdir">www.supply-log.com
-              </div>
-              <div style="text-align: left">
-                  <img src="../assets/img/dir/mail.png" alt="mail" class="imgdir">contacto@supply-log.com
+                  <img src="../assets/img/dir/mail.png" alt="mail" class="imgdir">mery.fontalvo@supplylog.cl
               </div>  
                 
                 
