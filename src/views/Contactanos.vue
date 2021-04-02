@@ -12,7 +12,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <!-- onsubmit="return Comprobar(this)" -->
-                    <form method="POST"> <!-- class="contact-form" -->
+                    <form method="post"> <!-- class="contact-form" -->
                         <!-- Titulo del Form -->
                         <h1>Formulario de Contacto</h1>
                         <h3>Por favor complete los datos y presione enviar.</h3>
@@ -20,41 +20,44 @@
                         <div class="form-group row mt-5">
                             <label for="nombre" class="col-sm-2 col-form-label">Razón Social o Nombre</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="nombre">
+                                <input type="text" class="form-control" id="nombre" v-model="name">
                             </div>
                         </div>
                         <!-- e-Mail -->
                         <div class="form-group row">
                             <label for="eMail" class="col-sm-2 col-form-label">e-Mail</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" id="eMail">
+                                <input type="email" class="form-control" id="eMail" v-model="email">
                             </div>
                         </div>
                         <!-- Telefono -->
                         <div class="form-group row">
                             <label for="fono" class="col-sm-2 col-form-label">Teléfono</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="fono">
+                                <input type="text" class="form-control" id="fono" v-model="fono">
                             </div>
                         </div>
                         <!-- Part Number -->
                         <div class="form-group row">
                             <label for="pnumber" class="col-sm-2 col-form-label">Part Number</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="pnumber">
+                                <input type="text" class="form-control" id="pnumber" v-model="partnumber">
                             </div>
                         </div>
                         <!-- Mensaje -->
                         <div class="form-group mt-3">
                             <label for="mensaje">Escríbanos su mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                            <textarea class="form-control" id="mensaje" rows="3" v-model="message"></textarea>
                         </div>
+
+                        <input type="button" value="Send Email" v-on:onclick="enviar"/><!-- (nombre, mail, fono, partnumber, mensaje) -->
+
                         <!-- Boton submit -->
-                        <button type="submit" class="btn btn-primary" onclick="submitForm()">Enviar</button>
+                        <button type="submit" class="btn btn-primary" onclick="submitForm">Enviar</button>
                         <!-- Boton limpiar -->
-                        <button type="reset" class="btn btn-primary ml-3">limpiar</button>
+                        <button v-on:click="enviar">enviar mail</button>
                         <!-- Boton cancelar -->
-                        <button type="button" class="btn btn-primary ml-3">Volver a Home</button>
+                        
                     </form>
                 </div>
             </div>
@@ -76,13 +79,29 @@ export default {
         Menu,
         Carrusel
     },
+
     data(){
         return{
-            loading:false
-           
+            loading:false,
+            nombre: '',
+            email: '',
+            fono: '',
+            partnumber : '',
+            mesg: ''  
         }
     },
     methods:{
+        saludar(){
+            console.log("Hola")
+            alert("Hola")
+            
+                    
+        },
+        enviar: function(){
+            
+                this.sendEmail()
+        
+        },
         async carga(){
             //ponemos un timeot para que se muestren los spinner
             
@@ -93,39 +112,30 @@ export default {
                 /* Document.querySelector(".contact-form").addEventListener("submit", this.submitForm()); */
             }, 1000);
         },
-        /* 
-        Comprobar(obj){
-            return true 
-        }, */
-        submitForm(e){
-            e.preventDefault();
-            console.log("llegue aca")
-            let name = document.querySelector("nombre").value;
-            let mail = document.querySelector("eMail").value;
-            let fono = document.querySelector("fono").value;
-            let pn = document.querySelector("pnumber").value;
-            let msg = document.querySelector("mensaje").value;
-            
-            this.sendEmail(name, mail, fono, pn, msg)
-        },
-        sendEmail(nombre, mail, fono, partnumber, mensaje){
-            Email.send({
-            Host : "srv12.cpanelhost.cl",  //smtp.yourisp.com
-            Username : "contacto@smart-net.cl",      //username
-            Password : "rHp?_^Z63#jZ",      //password
-            To : 'dzarate@pcfriend.cl',    //them@website.com
-            From : "contacto@smart-net.cl",       //you@isp.com
-            Subject : "Formulario de Contacto",
-            Body : `${nombre}, te ha enviado el siguiente mensaje: ${mensaje} <br/>El correo de ${nombre} es: ${mail} y su teléfono es: ${fono}. <br/>Part Number consultado: ${partnumber} `
-            }).then(
-                message => alert(message)
-            );
 
+        
+       sendEmail(){
+            alert("se enviara un mail")
+            Email.send({
+                Host : "mail.supplylog.cl",  //smtp.yourisp.com
+                Username : "contacto@supplylog.cl",      //username
+                Password : "2E95Mm77C.xU",      //password
+                To : 'dzarate@pcfriend.cl',    //them@website.com
+                From : "contacto@supplylog.cl",       //you@isp.com
+                Subject : "Formulario de Contacto",
+                Body : "Prueba desde vue"
+                }).then(function(message){
+                    console.log(message)
+                    alert("mail sent successfully")
+                });
         }
         
     },
+       /*  `${this.nombre}, te ha enviado el siguiente mensaje: ${this.msg} <br/>El correo de ${this.name} es: ${this.email} y su teléfono es: ${this.fono}. <br/>Part Number consultado: ${this.partnumber}` */
+    
     mounted(){
         this.carga()
+        
     }
 }
 </script>

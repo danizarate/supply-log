@@ -1,6 +1,6 @@
 <template>
 
-    <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+    <div id="carrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <ol class="carousel-indicators">
             <li data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carrusel" data-bs-slide-to="1"></li>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-        <a class="left carousel-control" href="#carrusel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="#carrusel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </a>

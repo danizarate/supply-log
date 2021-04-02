@@ -4,13 +4,13 @@
           <div class="col-sm-12 mt-5">
                 <div id="loader" class="mt-5">
                   <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Cargando contenido...</span>
+                      <span class="visually-hidden"></span>
                   </div>
                   <div class="spinner-grow text-secondary" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                      <span class="visually-hidden"></span>
                   </div>
                   <div class="spinner-grow text-warning" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                      <span class="visually-hidden"></span>
                   </div>
                 </div>
                 <h3>Cargando contenido...</h3>

@@ -5,11 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
-    <title></title>
+    <title>SupplyLog Chile</title>
+    
+     <!--Bootstrap CSS 4.5/5.0 beta -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <!-- Mail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!--Bootstrap CSS 4.5/5.0 beta -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- 
+	  <script type="text/javascript">
+		
+    function sendEmail(nombre, msg, email, fono, partnumber) {
+			Email.send({
+				Host : "mail.supplylog.cl",  
+                Username : "contacto@supplylog.cl",    
+                Password : "2E95Mm77C.xU",      
+                To : 'dzarate@pcfriend.cl',   
+                From : "contacto@supplylog.cl",       
+                Subject : "Formulario de Contacto",
+                Body : `${this.nombre}, te ha enviado el siguiente mensaje: ${this.msg} <br/>El correo de ${this.nombre} es: ${this.email} y su teléfono es: ${this.fono}. <br/>Part Number consultado: ${this.partnumber}`
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		} -->
+	</script>
+  </head>
+  <body>
+
+    <div id="app">
+      
+    </div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     
     <!-- Font Awesome ICO -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
@@ -19,18 +52,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-    <!-- Ajax BTS popup -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Ajax BTS popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-
-    <div id="app">
-      
-    </div>
-    <!-- Mail -->
     
+    <!-- CDN de bootstrapt para carrusel -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <nav class="navbar navbar-expand-md bg-secondary navbar-dark"><!-- section new-nav tw-z-50 tw-py-4 tw-bg-tw-bg-blue-darkest lg:tw-py-3 -->
+          <!-- navbar navbar-expand-md bg-primary navbar-dark -->
           <!-- <a class="navbar-brand"> -->
           <router-link to="#" class="navbar-brand">
             <img src="../assets/img/Logo.png" width="150" height="30" class="d-inline-block align-top logonav" alt="..." loading="lazy"/>
@@ -17,6 +18,12 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Compras">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Repuestos">Contactanos 2</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Contactanos">Contactanos</a>
