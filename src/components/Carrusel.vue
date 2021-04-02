@@ -8,7 +8,7 @@
         </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/img/carrusel/uno.jpg" class="d-block w-100" alt="...">
+                    <img src="../assets/img/carrusel/par1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-xs-block">
                         <!-- <h5>Kids</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/carrusel/tres.jpg" class="d-block w-100" alt="...">
+                    <img src="../assets/img/carrusel/minning3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-xs-block">
                         <!-- <h5>Men League</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->

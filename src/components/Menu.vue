@@ -23,7 +23,7 @@
                 <a class="nav-link" href="/Compras">Compras</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Repuestos">Contactanos 2</a>
+                <a class="nav-link" href="/Repuestos">Repuestos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Contactanos">Contactanos</a>
