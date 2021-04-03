@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/carrusel/minning3.jpg" class="d-block w-100" alt="...">
+                    <img src="../assets/img/carrusel/img3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-xs-block">
                         <!-- <h5>Men League</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
