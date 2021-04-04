@@ -31,7 +31,7 @@ export default {
         /* window.onload = init() */
     },
     mounted:{
-        
+       
     }
 }
 </script>

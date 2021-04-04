@@ -4,6 +4,13 @@ import Contactanos from "../views/Contactanos.vue"
 import Notfound from '../views/Notfound.vue'
 import Compras from '../views/Compras.vue'
 import Repuestos from '../views/Repuestos.vue'
+import LandingAllanbradley from '../views/LandingAllanbradley.vue'
+import LandingAtlas from '../views/LandingAtlas.vue'
+import LandingCat from '../views/LandingCat.vue'
+import LandingEpiroc from '../views/LandingEpiroc.vue'
+import LandingFleetguard from '../views/LandingFleetguard.vue'
+import LandingFluke from '../views/LandingFluke.vue'
+import LandingKomatsu from '../views/LandingKomatsu.vue'
 const routes = [
   {
     path: "/",
@@ -24,6 +31,42 @@ const routes = [
     path: "/Repuestos",
     name: "Repuestos",
     component: Repuestos,
+  },
+  {
+    path: "/LandingAllanbradley",
+    name: "LandingAllanbradley",
+    component: LandingAllanbradley,
+  },
+  {
+    path: "/LandingAtlas",
+    name: "LandingAtlas",
+    component: LandingAtlas,
+  },
+  
+  {
+    path: "/LandingCat",
+    name: "LandingCat",
+    component: LandingCat,
+  },
+  {
+    path: "/LandingEpiroc",
+    name: "LandingEpiroco",
+    component: LandingEpiroc,
+  },
+  {
+    path: "/LandingFleetguard",
+    name: "LandingFleetguard",
+    component: LandingFleetguard,
+  },
+  {
+    path: "/LandingFluke",
+    name: "LandingFluke",
+    component: LandingFluke,
+  },
+  {
+    path: "/LandingKomatsu",
+    name: "LandingKomatsu",
+    component: LandingKomatsu,
   },
   {
     path: '/404',
