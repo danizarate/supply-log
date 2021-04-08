@@ -63,13 +63,17 @@
                             <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje acá; puede tambien pegar hipervinculos de SKU o P/N de piezas o repuestos" v-model="msg"></textarea>
                         </div>
                         <!-- nombre, msg, email, fono, partnumber -->
-		                <input type="button" value="Send Email" @click="preparar(nombre, msg, email, fono, partnumber)"/><!-- sendEmail() -->
-                        
+		                <input type="button" value="Enviar solicitud" @click="preparar(nombre, msg, email, fono, partnumber)"/><!-- sendEmail() -->
+                        <!-- <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                        </button> -->
                     </form>
                 </div>
             </div>
         </div>
-        
+        <hr style="color: #0056b2;" /> <!-- Crea divisor -->
+        <Footer />
     </div>
 </template>
 
@@ -77,12 +81,14 @@
 import Loader from '@/components/Loader.vue'
 import Whatsapp from '@/components/Whatsapp.vue'
 import Menu from "@/components/Menu.vue"
+import Footer from "@/components/Footer.vue"
 /* import Carrusel from '@/components/Carrusel.vue' */
 export default {
     name: "Repuestos",
     components:{
         Loader,
         Whatsapp,
+        Footer,
         Menu
        /*  Carrusel */
     },
@@ -106,16 +112,15 @@ export default {
             console.log(this.email)
             console.log(this.msg)
             Email.send({
-                Host : "mail.supplylog.cl",  //smtp.yourisp.com
-                Username : "contacto@supplylog.cl",      //username
-                Password : "2E95Mm77C.xU",      //password
+                SecureToken : "64901202-2440-4bf5-9115-3de921f02bfa",
                 To : 'dzarate@pcfriend.cl',    //them@website.com
                 From : "contacto@supplylog.cl",       //you@isp.com
                 Subject : "Formulario de Contacto",
                 Body : `${this.nombre}, te ha enviado el siguiente mensaje: ${this.msg} <br/>El correo de ${this.nombre} es: ${this.email} y su teléfono es: ${this.fono}. <br/>Part Number consultado: ${this.partnumber}`
                 })
                 .then(function(){
-                    alert("mail sent successfully")
+
+                    alert("Formulario enviado exitosamente")
                 });
         },
         async carga(){

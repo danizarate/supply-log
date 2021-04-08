@@ -32,21 +32,22 @@
           <div class="col-sm-2"></div>
           <div class="colcol-sm-8 mt-5">
               <h1 class="mb-5"><strong>IMPORTACIÓN DE REPUESTOS</strong> </h1>
-                <div class="container parallax_dos">
+                <div class="container"> <!-- parallax_dos mail 5-5-21 Solicita Mery F. -->
                   <div class="row">
                       <div class="col-sm-auto texto_uno">
-                         <h3 class="mt-5">Si necesitas comprar repuestos para tu auto, puedes hacerlo con nosotros por medio de estas páginas:</h3>
-                        <h4 class="mt-5">Adquiere con SupplyLog todo en repuestos industriales para tu empresa. Contamos con excelentes proveedores, las mejores 
-                            marcas del mercado, ya sea Originales o Alternativos, a precios competitivos, brindándote un servicio Todo Incluido, donde 
-                            nosotros nos hacemos cargo de todo. 
-                        </h4>
+                         <!-- <h3 class="mt-5">Si necesitas comprar repuestos para tu auto, puedes hacerlo con nosotros por medio de estas páginas:</h3> mail 5-5-21 Solicita Mery Fontalvo -->
+                        <h3 class="mt-3">Adquiere con SupplyLog todo en repuestos industriales para tu
+                                        empresa. Contamos con excelentes proveedores, las mejores marcas del mercado, ya sea Originales o
+                                        Alternativos, a precios competitivos, brindándote un servicio Todo Incluido, donde nosotros nos hacemos cargo
+                                        de todo. 
+                        </h3>
                        </div>
                   </div>
               </div>
 
               <h4 class="mt-5">
-                    Importamos para todos los rubros, contando siempre con las mejores marcas industriales:
-                </h4>
+                    Importamos para todos los rubros, donde contamos con muchas de las mejores marcas, estas son algunas:
+              </h4>
           </div>
                 <!-- ********************************************************************************************************* -->
              
@@ -241,10 +242,10 @@
                 </div>
               </div>  
 
-                <h5 class="mt-4"><strong>IMPORTANTE:  
+               <!--  <h5 class="mt-4"><strong>IMPORTANTE:  
                     Por restricción aduanera, Supply Log no puede importar productos orgánicos, alimenticios, de belleza, perfumes, cosméticos y armas de fuego.
                     </strong>
-                </h5>
+                </h5> -->
              </div>  
       </div>
     

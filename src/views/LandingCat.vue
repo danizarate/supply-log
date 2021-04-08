@@ -10,10 +10,12 @@
                         </div>
                         <div class="card-body">
                             <img class="card-img-top imgprov" src="../assets/img/compras/seccion2/cat.jpg" alt="Card image cap">
-                            <p class="card-text mt-3">Adquiere con nosotros todo en Repuestos y Accesorios Caterpillar Originales y Alternativos, Importados directamente de Estados Unidos, a precios competitivos - todo incluido - con un servicio completo de logística rápido y eficiente para ti y/o tu empresa. </p>
+                            <p class="card-text mt-3 justificar">Adquiere con nosotros todo en Repuestos y Accesorios Caterpillar Originales y/o Alternativos (Aftermarket, CTP), Importados directamente de Estados Unidos, a precios competitivos - todo incluido - con un servicio completo de logística rápido y eficiente para ti y/o tu empresa. Hacemos entregas en todo el país.
+                                                      Consulte más marcas de Caterpillar: Cat Reman, Cat Lift Trucks, Anchor, AsiaTrak, FG Wilson, Hindustan, Hypac, Kemper, MaK, MWM, M2M, Olympian, Perkins, Progress Rail, SEM, Solar Turbines, Turner Powertrain Systems.
+                            </p>
                         </div>
                         <div class="card-footer text-muted">
-                            <p>Para poder ayudarlo de manera óptima en su solicitud de cotización, debe proporcionarnos el <strong>NÚMERO DE PARTE</strong> del repuesto. Esta información es primordial para poder ayudarlo con su requerimiento.</p>
+                            <p>Para poder ayudarlo de manera óptima en su solicitud de cotización, debe proporcionarnos el <strong>NÚMERO DE PARTE</strong> del repuesto. <b>Esta información es primordial para poder ayudarlo con su requerimiento.</b></p>
                         </div>
                     </div>
                     <!-- ******************************************************* -->
@@ -26,10 +28,7 @@
                             <p><strong>Puedes cotizar con nosotros: </strong></p>
                         </div>
                         <div class="card-body mt-3">
-                            <p class="card-text">Repuestos y Accesorios de todo tipo: Filtros, Filtros de Aire, Filtros de aceite de motor, filtros de combustible y separadores de agua, 
-                                filtros hidráulicos y de transmisión, sistemas de lubricación, válvulas de retención, Kits para mantenimiento, coladores, conjuntos de rejilla, 
-                                conjuntos de caja, respiradero, Pantallas, retenedor, tuerca, conjunto de tapa, conjunto de colador, indicador mantenimiento, anillo de fricción, juego de filtro, 
-                                imán, prisionero, colador, sello anular, sellos de cilindros, sensores, piezas del motor, luces y accesorios, herramientas de corte, fluidos, baterías, correas, etc. 
+                            <p class="card-text justificar">Repuestos y Accesorios de todo tipo: Filtros, Filtros de Aire, Filtros de aceite de motor, filtros de combustible y separadores de agua, filtros hidráulicos y de transmisión, sistemas de lubricación, válvulas de retención, Kits para mantenimiento, coladores, conjuntos de rejilla, conjuntos de caja, respiradero, Pantallas, retenedor, tuerca, conjunto de tapa, conjunto de colador, indicador mantenimiento, anillo de fricción, juego de filtro, imán, prisionero, colador, sello anular, sellos de cilindros, sensores, piezas del motor, luces y accesorios, herramientas de corte, fluidos, baterías, correas, etc.
                             </p>
                         </div>
                         <div class="card-footer text-muted">

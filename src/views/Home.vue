@@ -9,14 +9,14 @@
 
      
       <Menu />
-      <Carrusel />
+      <!-- <Carrusel /> -->
       <Whatsapp />
       
       <!-- Imagen-1 Fondo de pantalla -->
-      <!-- 
+      
         
         <div class="card bg-dark text-primary">
-            <img class="card-img" src="../assets/img/imagen1.jpg" alt="Card image">
+            <img class="card-img" src="../assets/img/carrusel/par1.png" alt="Card image">
             <div class="card-img-overlay">
               <h5 class="card-title "><h1><strong>Bienvenido a Supply Log</strong></h1></h5>
               <p class="card-text">¡Tu mejor opción para tus compras en el extranjero, donde nosotros hacemos todo por ti!</p>
@@ -24,8 +24,8 @@
             </div>
         </div>
 
- -->
-        <HelloWorld msg="Lo necesitas; lo tienes!!!" class="mt-5" />
+
+        <HelloWorld msg="Lo necesitas; lo tienes" class="mt-5" />
         
      
 
@@ -39,8 +39,8 @@
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-1.jpg" alt="Card image cap">
                     <h5 class="card-title">Compramos por ti, desde donde tu   quieras.</h5>
-                    <p class="card-text">Adquiere lo que quieras, de páginas web como Amazon, eBay, etc.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Compra lo que quieras en Amazon, eBay, y muchas más.</p>
+                    <a href="/Compras" class="btn btn-primary">Ir a Compras</a>
                   </div>
                   
                 </div>
@@ -49,9 +49,12 @@
                 <div class="card">
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-2.jpg" alt="Card image cap">
-                    <h5 class="card-title">Repuestos industriales mucho más, a pedido.</h5>
-                    <p class="card-text">Importación de Repuestos Importación de Repuestos con número de parte.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Repuestos industriales a pedido.</h5><br>
+                    <p class="card-text">(informando el número de parte)</p><br>
+                    <a href="/Repuestos" class="btn btn-primary">Ir a Repuestos</a>
+                    <!--  <div class="card-footer">
+                    <small class="text-muted"><strong>Importante: </strong>Informando número de parte</small>
+                  </div> -->
                   </div>
                   
                 </div>
@@ -62,8 +65,8 @@
                   <div class="card-body">
                     <img class="card-img-top" src="../assets/img/L1-3.jpg" alt="Card image cap">
                     <h5 class="card-title">Todo tipo de productos, para ti o tu empresa.</h5>
-                    <p class="card-text">Buscamos los mejores precios, con una rápida logística.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Los mejores precios con la mejor logistica</p><br>
+                    <a href="/Contactanos" class="btn btn-primary">Contactanos</a>
                   </div>
                   
                 </div>
@@ -125,6 +128,7 @@
     <!-- LANDING-1 -->
 
     </div>
+    <!-- 
     <div class="container mt-3">
       <div class="row">
         <div class="col-sm-4">
@@ -163,7 +167,8 @@
               </div>
       </div>
     </div>
-
+ -->
+ <!-- 
     <div class="container">
       <div class="row mt-5">
           <h1 style="margin:0 auto;">¿Qué nos hace diferentes al resto?</h1>
@@ -187,7 +192,7 @@
             </div>
         </div>
 
-
+ -->
 
 
 
@@ -210,12 +215,12 @@
    
 
       <div class="row mt-5">
-        <h2 style="margin:0 auto;">Nuestros Proveedores</h2>
+        <h2 style="margin:0 auto;">Algunos de nuestros proveedores</h2>
       </div>
     </div>
 
 
-    <div class="container mt-3">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-sm-3">
                 <div class="card"> <!-- style="width: 18rem;" -->
@@ -366,14 +371,14 @@
     <Footer />
    
 </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import Whatsapp from '@/components/Whatsapp.vue'
-import Carrusel from '@/components/Carrusel.vue'
+/* import Carrusel from '@/components/Carrusel.vue' */
 import Loader from '@/components/Loader.vue';
 import Menu from "@/components/Menu.vue"
 import Footer from '@/components/Footer.vue'
@@ -391,7 +396,7 @@ export default {
         HelloWorld,
         Menu,
         Whatsapp,
-        Carrusel,
+        /* Carrusel, */
         Loader,
         Footer
     },

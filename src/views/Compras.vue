@@ -38,21 +38,22 @@
                     </strong>
                 </div> -->
                 <h1 class="mb-5">COMPRAS EN EL EXTRANJERO</h1>
-                <div class="container parallax_uno">
+                <div class="container"> <!-- parallax_uno mail 5-5-2021 x Mery Fontalvo -->
                   <div class="row">
                       <div class="col-sm-auto texto_uno">
-                          
-                          <h3 class="mt-5">Con Supply Log puedes comprar el producto que necesites en el Extranjero, ya sea en páginas como Amazon, Ebay o cualquier otra. 
-                        Te damos el mejor precio en pesos chilenos-todo incluido, hasta la puerta de tu casa, dándote un servicio todo en uno, de excelente calidad.
-                    </h3>
-                            </div>
+                          <h3><b>No te preocupes por nada, nuestro servicio, es todo incluido.</b></h3>
+                          <h3 class="mt-5">Hacemos la compra por ti, del producto que quieras, dándote el precio final en pesos, que incluye el valor del
+                                           producto, flete internacional, los gastos de internación y la entrega final a domicilio.
+                          </h3>
+                      </div>
                   </div>
               </div>
 
                 <h2 class="mt-5">Podemos traer tus productos desde los siguientes sitios web: </h2>
                     
                 <!-- ********************************************************************************************************* -->
-             
+             <!-- 
+               Eliminada x Mery Fontalvo mail 5-5-2021
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
@@ -60,19 +61,23 @@
                   </div>
                 </div>
               </div>
+ -->
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                     <a class="imgrrss" target="_Blanck" href="https://www.amazon.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/amazon.jpg" alt="Card image cap">
+                    </a>
+                  </div>
+                </div>
+              </div>
 
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/amazon.jpg" alt="Card image cap">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/bbuy.png" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.bestbuy.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/bbuy.png" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -80,7 +85,9 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/byh.png" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.bhphotovideo.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/byh.png" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -88,7 +95,9 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/ebay.jpg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.ebay.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/ebay.jpg" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -96,7 +105,9 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/apple.jpg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.apple.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/apple.jpg" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -104,7 +115,9 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/logitech.jpg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.logitech.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/logitech.jpg" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -112,7 +125,9 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/newwegg.jpg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.newegg.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/newwegg.jpg" alt="Card image cap">
+                    </a>
                   </div>
                 </div>
               </div>  
