@@ -25,7 +25,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <!-- onsubmit="return Comprobar(this)" -->
-                    <form method="post"> <!-- class="contact-form" -->
+                    <form method="post" id="formulario"> <!-- class="contact-form" -->
                         <!-- Titulo del Form -->
                         <h1 class="mt-5">Formulario de Contacto</h1>
                         <h3 class="mt-3">Por favor complete los datos y presione enviar.</h3>
@@ -33,28 +33,28 @@
                         <div class="form-group row mt-5">
                             <label for="nombre" class="col-sm-2 col-form-label">Nombre o Razón Social</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Bruno Ferrari o SmartNet Ltda. " v-model="nombre">
+                                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Bruno Ferrari o SmartNet Ltda. " v-model="nombre" required>
                             </div>
                         </div>
                         <!-- e-Mail -->
                         <div class="form-group row">
                             <label for="eMail" class="col-sm-2 col-form-label">e-Mail</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" id="eMail" placeholder="example@domain.com" v-model="email">
+                                <input type="email" class="form-control" id="eMail" placeholder="example@domain.com" v-model="email" required>
                             </div>
                         </div>
                         <!-- Telefono -->
                         <div class="form-group row">
                             <label for="fono" class="col-sm-2 col-form-label">Teléfono</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="fono" placeholder="123456789" v-model="fono">
+                                <input type="number" class="form-control" id="fono" placeholder="123456789" v-model="fono" required>
                             </div>
                         </div>
                         <!-- Part Number -->
                         <div class="form-group row">
                             <label for="partnumber" class="col-sm-2 col-form-label">Part Number</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="pnumber" placeholder="Pegue acá el link del part number por el que desea cotizar" v-model="partnumber">
+                                <input type="text" class="form-control" id="pnumber" placeholder="Pegue acá el link del part number por el que desea cotizar" v-model="partnumber" required>
                             </div>
                         </div>
                         <!-- Mensaje -->
@@ -62,12 +62,10 @@
                             <label for="msg">Escríbanos su mensaje</label>
                             <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje acá; puede tambien pegar hipervinculos de SKU o P/N de piezas o repuestos" v-model="msg"></textarea>
                         </div>
-                        <!-- nombre, msg, email, fono, partnumber -->
-		                <input type="button" value="Enviar solicitud" @click="preparar(nombre, msg, email, fono, partnumber)"/><!-- sendEmail() -->
-                        <!-- <button class="btn btn-primary" type="button" disabled>
-                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                        Loading...
-                        </button> -->
+                        
+                        <button class="btn btn-primary" type="button" id="enviar" @click="preparar(nombre, msg, email, fono, partnumber)">
+                            Enviar solicitud                     
+                        </button>
                     </form>
                 </div>
             </div>
@@ -98,7 +96,8 @@ export default {
         email:'',
         fono:'',
         partnumber:'',
-        msg:''
+        msg:'',
+        
       }
     },
     methods:{
@@ -108,20 +107,59 @@ export default {
             this.email = email
             this.fono = fono
             this.partnumber = partnumber
-            console.log(this.nombre)
-            console.log(this.email)
-            console.log(this.msg)
-            Email.send({
-                SecureToken : "64901202-2440-4bf5-9115-3de921f02bfa",
-                To : 'dzarate@pcfriend.cl',    //them@website.com
-                From : "contacto@supplylog.cl",       //you@isp.com
+            var d1 = document.getElementById('enviar');
+            var f1= document.getElementById("formulario");
+            var sw=true;
+            /* if (this.nombre.length() <3){
+                sw=false
+            }
+            if (this.msg.length() < 3){
+                sw=false
+            }
+            if (this.email.length() < 3){
+                sw=false
+            }
+            if (this.fono.length() < 3){
+                sw=false
+            }
+            if (this.partnumber.length()<3){
+                sw=false
+            }
+            console.log(sw)
+            if (sw == false){
+                d1.insertAdjacentHTML('afterend', '<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert"><strong>Ha ocurrido el siguiente error:</strong><p> Uno o más campos poseen valores no permitidos o violan la longitud minima requerida.</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+            }else{ */
+                d1.innerHTML=""
+                d1.insertAdjacentHTML('beforeend', '<span class="spinner-border spinner-border-sm"></span> Enviando...');
+                /* SecureToken : "033c7d2a-5790-44a6-ae5c-8529bad34388", */
+                Email.send({
+                Host : "mail.supplylog.cl",
+                Username : "contacto@supplylog.cl",
+                Password : "*#zde*ds!EC*",
+                To : 'dzarate@pcfriend.cl',
+                From : "contacto@supplylog.cl",
                 Subject : "Formulario de Contacto",
-                Body : `${this.nombre}, te ha enviado el siguiente mensaje: ${this.msg} <br/>El correo de ${this.nombre} es: ${this.email} y su teléfono es: ${this.fono}. <br/>Part Number consultado: ${this.partnumber}`
-                })
-                .then(function(){
+                Body : "Este es un mensaje enviado a traves del formulario de contacto de www.supplylog.cl :" + "<br><br><br>" + "Nombre o Razon Social : " + this.nombre + "<br>" + "E-Mail : " + this.email + "<br>" + 
+                        "Teléfono : " + this.fono + "<br>" + "P/N Consultado: " + this.partnumber + "<br><br>" + "Mensaje : " + this.msg
+                }).then((message)=>{
+                        if (message == "OK"){
+                            
+                            d1.innerHTML="Enviar solicitud"
+                            d1.insertAdjacentHTML('afterend', '<div class="alert alert-success alert-dismissible fade show mt-3" role="alert"><strong>Su solicitud fue enviada exitosamente!</strong> Nuestro equipo se contactará en un plazo de 48 horas con Usted.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                            f1.reset();
 
-                    alert("Formulario enviado exitosamente")
-                });
+                        }else{
+                            
+                            d1.innerHTML="Enviar solicitud"
+                            /* d1.insertAdjacentHTML('afterend', '<div class="alert alert-danger mt-2"><strong></strong>' + message + '</div>'); */
+                            d1.insertAdjacentHTML('afterend', '<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert"><strong>Ha ocurrido el siguiente error:</strong><p>' + message + '</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                            f1.reset();
+                        }
+                    }
+                    
+                    
+                );
+            /* } */
         },
         async carga(){
             //ponemos un timeot para que se muestren los spinner

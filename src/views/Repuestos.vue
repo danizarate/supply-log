@@ -261,11 +261,11 @@
             <Footer class="mt-5" />
 
 
-          </div>
+          
           <hr style="color: #0056b2;" />
           <Footer />
       </div>
- <!--  </div> -->
+  </div>
 </template>
 
 <script>

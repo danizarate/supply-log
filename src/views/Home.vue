@@ -217,7 +217,7 @@
       <div class="row mt-5">
         <h2 style="margin:0 auto;">Algunos de nuestros proveedores</h2>
       </div>
-    </div>
+    
 
 
     <div class="container mt-5">
@@ -369,7 +369,7 @@
     <hr style="color: #0056b2;" /> <!-- Crea divisor -->
 
     <Footer />
-   
+   </div>
 </div>
   <!-- </div> -->
 </template>

@@ -146,7 +146,10 @@
                 <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/autos/rock.jpeg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.rockauto.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/autos/rock.jpeg" alt="Card image cap">
+                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -154,7 +157,10 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/autos/borla.png" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.borla.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/autos/borla.png" alt="Card image cap">
+                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -162,7 +168,11 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/autos/kyn2.png" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.knfiltros.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/autos/kyn2.png" alt="Card image cap">
+                    </a>
+                    
+                    
                   </div>
                 </div>
               </div>
@@ -170,7 +180,10 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/autos/carid.jpg" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.carid.com/">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/autos/carid.jpg" alt="Card image cap">
+                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -178,13 +191,16 @@
                <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top imgprov" src="../assets/img/compras/autos/tirerack.png" alt="Card image cap">
+                    <a class="imgrrss" target="_Blanck" href="https://www.tirerack.com/content/tirerack/desktop/en/homepage.html">
+                      <img class="card-img-top imgprov" src="../assets/img/compras/autos/tirerack.png" alt="Card image cap">
+                    </a>
+                    
                   </div>
                 </div>
               </div>  
              </div>  
       </div>
-    </div>
+    
 
     <!-- *************************************************************************************************************** -->
     <!-- ***************************************************    RRSS   ************************************************* -->
@@ -198,7 +214,7 @@
             </div>
         </div>    
         <Footer />
-                
+     </div>           
     
 </template>
 
