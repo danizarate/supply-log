@@ -33,7 +33,7 @@
                         <div class="form-group row mt-5">
                             <label for="nombre" class="col-sm-2 col-form-label">Nombre o Razón Social</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Bruno Ferrari o SmartNet Ltda. " v-model="nombre" required>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Bruno Ferrari o SmartNet Ltda. " v-model.trim="nombre" required>
                             </div>
                         </div>
                         <!-- e-Mail -->
@@ -63,7 +63,7 @@
                             <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje acá; puede tambien pegar hipervinculos de SKU o P/N de piezas o repuestos" v-model="msg"></textarea>
                         </div>
                         
-                        <button class="btn btn-primary" type="button" id="enviar" @click="preparar(nombre, msg, email, fono, partnumber)">
+                        <button class="btn btn-primary" type="button" id="enviar" @click="preparar(nombre, msg, email, fono, partnumber)" :disabled="habilitar">
                             Enviar solicitud                     
                         </button>
                     </form>
@@ -80,7 +80,6 @@ import Loader from '@/components/Loader.vue'
 import Whatsapp from '@/components/Whatsapp.vue'
 import Menu from "@/components/Menu.vue"
 import Footer from "@/components/Footer.vue"
-/* import Carrusel from '@/components/Carrusel.vue' */
 export default {
     name: "Repuestos",
     components:{
@@ -88,7 +87,6 @@ export default {
         Whatsapp,
         Footer,
         Menu
-       /*  Carrusel */
     },
     data(){
       return{
@@ -109,26 +107,7 @@ export default {
             this.partnumber = partnumber
             var d1 = document.getElementById('enviar');
             var f1= document.getElementById("formulario");
-            var sw=true;
-            /* if (this.nombre.length() <3){
-                sw=false
-            }
-            if (this.msg.length() < 3){
-                sw=false
-            }
-            if (this.email.length() < 3){
-                sw=false
-            }
-            if (this.fono.length() < 3){
-                sw=false
-            }
-            if (this.partnumber.length()<3){
-                sw=false
-            }
-            console.log(sw)
-            if (sw == false){
-                d1.insertAdjacentHTML('afterend', '<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert"><strong>Ha ocurrido el siguiente error:</strong><p> Uno o más campos poseen valores no permitidos o violan la longitud minima requerida.</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
-            }else{ */
+           
                 d1.innerHTML=""
                 d1.insertAdjacentHTML('beforeend', '<span class="spinner-border spinner-border-sm"></span> Enviando...');
                 /* SecureToken : "033c7d2a-5790-44a6-ae5c-8529bad34388", */
@@ -137,6 +116,7 @@ export default {
                 Username : "contacto@supplylog.cl",
                 Password : "*#zde*ds!EC*",
                 To : 'mery.fontalvo@supplylog.cl',
+                Bcc : 'contactform@supplylog.cl',
                 From : "contacto@supplylog.cl",
                 Subject : "Formulario de Contacto",
                 Body : "Este es un mensaje enviado a traves del formulario de contacto de www.supplylog.cl :" + "<br><br><br>" + "Nombre o Razon Social : " + this.nombre + "<br>" + "E-Mail : " + this.email + "<br>" + 
@@ -151,7 +131,6 @@ export default {
                         }else{
                             
                             d1.innerHTML="Enviar solicitud"
-                            /* d1.insertAdjacentHTML('afterend', '<div class="alert alert-danger mt-2"><strong></strong>' + message + '</div>'); */
                             d1.insertAdjacentHTML('afterend', '<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert"><strong>Ha ocurrido el siguiente error:</strong><p>' + message + '</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
                             f1.reset();
                         }
@@ -159,7 +138,6 @@ export default {
                     
                     
                 );
-            /* } */
         },
         async carga(){
             //ponemos un timeot para que se muestren los spinner
@@ -168,7 +146,6 @@ export default {
             setTimeout(() => {
                 //usamos el servicio para traer los datos
                 this.loading = false;
-                /* Document.querySelector(".contact-form").addEventListener("submit", this.submitForm()); */
             }, 1000);
 
         },
@@ -176,6 +153,11 @@ export default {
     mounted(){
         this.carga()
         
+    },
+    computed:{
+        habilitar(){
+            return this.nombre.trim() === "" || this.email.trim() ==="" || this.fono.trim() ==="" || this.partnumber.trim() === "" ? true:false
+        }
     }
 }
 </script>
