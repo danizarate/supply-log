@@ -136,7 +136,7 @@ export default {
                 Host : "mail.supplylog.cl",
                 Username : "contacto@supplylog.cl",
                 Password : "*#zde*ds!EC*",
-                To : 'dzarate@pcfriend.cl',
+                To : 'mery.fontalvo@supplylog.cl',
                 From : "contacto@supplylog.cl",
                 Subject : "Formulario de Contacto",
                 Body : "Este es un mensaje enviado a traves del formulario de contacto de www.supplylog.cl :" + "<br><br><br>" + "Nombre o Razon Social : " + this.nombre + "<br>" + "E-Mail : " + this.email + "<br>" + 

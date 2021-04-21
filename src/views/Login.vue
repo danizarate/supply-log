@@ -7,6 +7,8 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <form @submit.prevent="login">
+                    
+                    
                     <h3 class="mt-5">Por favor ingrese sus credenciales</h3>
                     <div class="form-group mx-sm-3 mb-2">
                         <label for="exampleInputEmail1">Email</label>
@@ -27,7 +29,7 @@
                     <div class="col">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                    
+                   
                 </form>
             </div>
         </div>
@@ -62,7 +64,7 @@ export default {
                     //La validacion ha sido exitosa
                     this.$store.dispatch('setUserAction', user) //Llama a la mutacion en Store/index.js
                     
-                    this.$router.push("/") // Envia al usuario al home
+                    this.$router.push("/Cotizador") // Envia al usuario al home
                 }).catch(error =>{
                     //Se produjo un error en la autenticacion
                     console.log(error)

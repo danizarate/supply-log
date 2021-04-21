@@ -5,11 +5,15 @@
 
     <div class="container mx-2">
         <div class="row">
-            <div class="col-sm-4 mt-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.073905524849!2d-70.61285898426549!3d-33.42131750340486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf663aecd2ef%3A0x91d5603472c75083!2sNueva%20de%20Lyon%2072%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617036302793!5m2!1ses!2scl"
+            <div class="col-sm-3 mt-5">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.073905524849!2d-70.61285898426549!3d-33.42131750340486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf663aecd2ef%3A0x91d5603472c75083!2sNueva%20de%20Lyon%2072%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617036302793!5m2!1ses!2scl"
                  width="300" height="300" style="border:2px solid black;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.073905524849!2d-70.61285898426549!3d-33.42131750340486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf663aecd2ef%3A0x91d5603472c75083!2sNueva%20de%20Lyon%2072%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617036302793!5m2!1ses!2scl"
+                 width="300" height="300" style="border:2px solid black;" allowfullscreen="" loading="lazy"></iframe> -->
             </div>
-            <div class="col-sm-6 mx-2">
+            <div class="col-sm-7 mx-2">
               <h3><strong>Supply-Log</strong></h3>
               <div class="row mt-3">
                   <h5 class="izq">Nueva de Lyon 72 - Oficina 1501</h5>
