@@ -55,8 +55,8 @@ import "@/firebase/init"
 export default {
     name:"Menu",
     created(){
-        console.log(this.getIsLoguedIn())
-        //console.log(this.store);
+       /*  console.log(this.getIsLoguedIn()) */
+       
     },
     methods:{
         login(){
